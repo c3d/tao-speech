@@ -1,0 +1,19 @@
+// Speech module definition
+//
+// The Speech synthesis module makes it easy for presentations to say something to you in real-time 
+//
+// Copyright 2013 Taodyne SAS
+
+module_description
+    id "ECFDC6F2-EB71-4952-B052-BDD3BF47FD4D" 
+    name "Speech Synthesis module"
+    description "The speech synthesis module lets your presentations speak"
+    import_name "Speech"
+    author "Taodyne SAS"
+    website "http://www.taodyne.com"
+    version 1.0
+
+
+module_description "fr",
+    name "Synthèse vocale"
+    description "Le module de synthèse vocale permet à vos présentation de parler"
