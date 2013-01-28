@@ -26,7 +26,7 @@
 
 XL::Name_p speech_say(XL::Tree_p self, text what);
 XL::Text_p speech_voice(XL::Tree_p self, text voice);
-XL::Tree_p speech_voices(XL::Tree_p self, int count);
+XL::Tree_p speech_voices(XL::Tree_p self);
 
 using namespace Tao;
 using namespace QtSpeech_v1;
@@ -37,7 +37,6 @@ struct Speech : QtSpeech
     Q_OBJECT
 public:
     Speech(VoiceName n = VoiceName()): QtSpeech(n), speaking(""), done(false) {}
-    ~Speech() { tell("", 0, 0);  }
 
     void speak(QString s)
     {
