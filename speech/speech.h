@@ -37,7 +37,6 @@ struct Speech : QtSpeech
     Q_OBJECT
 public:
     Speech(VoiceName n = VoiceName()): QtSpeech(n), speaking(""), done(false) {}
-    ~Speech() { tell("", 0, 0);  }
 
     void speak(QString s)
     {
