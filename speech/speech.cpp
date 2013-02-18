@@ -51,6 +51,8 @@ XL::Text_p speech_voice(XL::Tree_p self, text voice)
     if (!speech_current_voice ||
         speech_current_voice->name().name != qvoice)
     {
+        IFTRACE(speech)
+            std::cerr << "Requesting voice '" << voice << "'\n";
         Speech::VoiceNames voiceNames = Speech::voices();
         foreach (Speech::VoiceName voiceName, voiceNames)
         {
@@ -60,13 +62,21 @@ XL::Text_p speech_voice(XL::Tree_p self, text voice)
                           << "\n";
             if (voiceName.name == qvoice)
             {
+                IFTRACE(speech)
+                    std::cerr << "Selecting " << +voiceName.name
+                              << " id " << +voiceName.id
+                              << "\n";
                 delete speech_current_voice;
                 speech_current_voice = new Speech(voiceName);
                 break;
             }
         }
         if (!speech_current_voice)
+        {
+            IFTRACE(speech)
+                std::cerr << "Selecting default voice\n";
             speech_current_voice = new Speech();
+        }
     }
 
     return new XL::Text(+speech_current_voice->name().name,
