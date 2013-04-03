@@ -26,7 +26,7 @@
 
 XL::Name_p speech_say(XL::Tree_p self, text what);
 XL::Text_p speech_voice(XL::Tree_p self, text voice);
-XL::Tree_p speech_voices(XL::Tree_p self);
+XL::Tree_p speech_voices(XL::Tree_p self, int count);
 
 using namespace Tao;
 using namespace QtSpeech_v1;
