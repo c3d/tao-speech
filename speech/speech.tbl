@@ -32,7 +32,8 @@ PREFIX(SpeechSetVoice,  text, "voice",
        GROUP(module.Speech)
        SYNOPSIS("Change the voice for the next speech."))
 
-PREFIX(SpeechVoicesList,  tree, "voices", ,
-       return speech_voices(self),
+PREFIX(SpeechVoicesList,  tree, "voices",
+       PARM(count, integer, ""),
+       return speech_voices(self, count),
        GROUP(module.Speech)
        SYNOPSIS("Return a comma-separated list of available voices"))

@@ -17,3 +17,6 @@ module_description
 module_description "fr",
     name "Synthèse vocale"
     description "Le module de synthèse vocale permet à vos présentation de parler"
+
+
+voices -> voices 512
