@@ -36,11 +36,8 @@ struct Speech : QtSpeech
 {
     Q_OBJECT
 public:
-    Speech(VoiceName n = VoiceName()): QtSpeech(n), speaking(""), done(false)
-    {
-        connect(this, SIGNAL(finished()), this, SLOT(speechFinished()));
-    }
-    ~Speech() { tell(""); }
+    Speech(VoiceName n = VoiceName()): QtSpeech(n), speaking(""), done(false) {}
+    ~Speech() { tell("", 0, 0);  }
 
     void speak(QString s)
     {
@@ -50,7 +47,7 @@ public:
                 std::cerr << "Speech: Starting to say \"" << +s << "\"\n";
             speaking = s;
             done = false;
-            tell(s);
+            tell(s, this, SLOT(speechFinished()));
         }
     }
 
