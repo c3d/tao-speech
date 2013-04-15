@@ -84,7 +84,7 @@ XL::Text_p speech_voice(XL::Tree_p self, text voice)
 }
 
 
-XL::Tree_p speech_voices(XL::Tree_p self)
+XL::Tree_p speech_voices(XL::Tree_p self, int count)
 // ----------------------------------------------------------------------------
 //   Return a comma-separated list of available voices
 // ----------------------------------------------------------------------------
@@ -96,6 +96,9 @@ XL::Tree_p speech_voices(XL::Tree_p self)
 
     foreach (Speech::VoiceName voiceName, voiceNames)
     {
+        if (count-- <= 0)
+            break;
+
         XL::Text_p vname = new XL::Text(+voiceName.name, "\"", "\"", pos);
         if (*parent)
         {
