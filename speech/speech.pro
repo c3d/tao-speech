@@ -11,9 +11,6 @@ OTHER_FILES += doc/speech.doxy.h doc/Doxyfile.in
 
 INSTALLS    += thismod_icon
 
-LICENSE_FILES = speech.taokey.notsigned
-include(../../licenses.pri)
-
 QT += core
 LIBS += -L../qt-speech -lQtSpeech
 
