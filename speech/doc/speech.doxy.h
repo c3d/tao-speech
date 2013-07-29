@@ -1,8 +1,8 @@
 /**
  * @~english
  * @taomoduledescription{Speech, Speech synthesis module}
+ * <tt>import Speech</tt> - The speech synthesis module lets your presentations speak.@n
  *
- * The speech synthesis module lets your presentations speak.
  * This module provides a @ref say function to speak a text out loud,
  * and @ref voice to change the voice used for speech.
  *
@@ -42,8 +42,8 @@ speech_page V:text ->
  *
  * @~french
  * @taomoduledescription{Speech, Synthèse vocale}
+ * <tt>import Speech</tt> - Permet à vos présentation de parler.@n
  *
- * Le module de synthèse vocale permet à vos présentation de parler.
  * Ce module fournit une fonction @ref say pour réciter un texte,
  * et @ref voice pour changer la voix utilisée pour parler.
  *
