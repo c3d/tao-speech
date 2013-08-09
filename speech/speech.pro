@@ -1,5 +1,4 @@
 MODINSTDIR = speech
-
 include(../../modules.pri)
 
 SOURCES = speech.cpp
@@ -12,7 +11,7 @@ OTHER_FILES += doc/speech.doxy.h doc/Doxyfile.in
 INSTALLS    += thismod_icon
 
 QT += core
-LIBS += -L../qt-speech -lQtSpeech
+LIBS += -L../qt-speech/\$(DESTDIR) -lQtSpeech
 
 macx {
     LIBS *= -framework AppKit
