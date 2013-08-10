@@ -21,6 +21,7 @@
 // ****************************************************************************
 
 #include "speech.h"
+#include "tao/module_api.h"
 
 
 static Speech *speech_current_voice = NULL;
@@ -116,6 +117,19 @@ XL::Tree_p speech_voices(XL::Tree_p self, int count)
         return XL::xl_nil;
             
     return result;
+}
+
+
+int module_exit()
+{
+    if (speech_current_voice)
+    {
+        IFTRACE(speech)
+            std::cerr << "Speech: module_exit: deleting current voice\n";
+        delete speech_current_voice;
+        speech_current_voice = NULL;
+    }
+    return 0;
 }
 
 XL_DEFINE_TRACES
