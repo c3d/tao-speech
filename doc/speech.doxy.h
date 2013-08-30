@@ -63,7 +63,7 @@ say "Hello World"
  * suivant:
  * @code
 import Speech
-say "It is currently " & text hours & " hours and " & text seconds
+say "It is currently " & text hours & " hours and " & text minutes & " minutes"
  * @endcode
  *
  * Vous pouvez changer la voix utilisée pour parler en utilisant
