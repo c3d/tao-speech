@@ -17,7 +17,7 @@ say "Hello World"
  * talking clock with the following:
  * @code
 import Speech
-say "It is currently " & text hours & " hours and " & text seconds
+say "It is currently " & text hours & " hours and " & text minutes & " minutes"
  * @endcode
  *
  * You can change the voice with the @ref voice command. The list of
