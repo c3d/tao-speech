@@ -1,6 +1,6 @@
 /**
  * @~english
- * @taomoduledescription{Speech, Speech synthesis module}
+ * @taomoduledescription{Speech, Speech synthesis}
  * <tt>import Speech</tt> - The speech synthesis module lets your presentations speak.@n
  *
  * This module provides a @ref say function to speak a text out loud,
