@@ -42,7 +42,7 @@ speech_page V:text ->
  *
  * @~french
  * @taomoduledescription{Speech, Synthèse vocale}
- * <tt>import Speech</tt> - Permet à vos présentation de parler.@n
+ * <tt>import Speech</tt> - Permet à vos présentations de parler.@n
  *
  * Ce module fournit une fonction @ref say pour réciter un texte,
  * et @ref voice pour changer la voix utilisée pour parler.
