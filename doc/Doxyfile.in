@@ -1,5 +1,5 @@
 @INCLUDE = ../../../Doxyfile
-PROJECT_NAME = \"Speech Synthesis module\"
+PROJECT_NAME = \"Speech Synthesis\"
 PROJECT_NUMBER = 1.002
 QHP_NAMESPACE = com.taodyne.TaoPresentations.modules.Speech.1.002
 QHP_VIRTUAL_FOLDER = Speech
