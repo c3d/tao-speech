@@ -1,8 +1,8 @@
 /**
  * @~english
- * @taomoduledescription{Speech, Speech synthesis module}
+ * @taomoduledescription{Speech, Speech synthesis}
+ * <tt>import Speech</tt> - The speech synthesis module lets your presentations speak.@n
  *
- * The speech synthesis module lets your presentations speak.
  * This module provides a @ref say function to speak a text out loud,
  * and @ref voice to change the voice used for speech.
  *
@@ -17,7 +17,7 @@ say "Hello World"
  * talking clock with the following:
  * @code
 import Speech
-say "It is currently " & text hours & " hours and " & text seconds
+say "It is currently " & text hours & " hours and " & text minutes & " minutes"
  * @endcode
  *
  * You can change the voice with the @ref voice command. The list of
@@ -42,8 +42,8 @@ speech_page V:text ->
  *
  * @~french
  * @taomoduledescription{Speech, Synthèse vocale}
+ * <tt>import Speech</tt> - Permet à vos présentations de parler.@n
  *
- * Le module de synthèse vocale permet à vos présentation de parler.
  * Ce module fournit une fonction @ref say pour réciter un texte,
  * et @ref voice pour changer la voix utilisée pour parler.
  *
@@ -63,7 +63,7 @@ say "Hello World"
  * suivant:
  * @code
 import Speech
-say "It is currently " & text hours & " hours and " & text seconds
+say "It is currently " & text hours & " hours and " & text minutes & " minutes"
  * @endcode
  *
  * Vous pouvez changer la voix utilisée pour parler en utilisant
