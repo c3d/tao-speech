@@ -7,25 +7,25 @@
  * and @ref voice to change the voice used for speech.
  *
  * To say "Hello World", use:
- * @code
+@code
 import Speech
 say "Hello World"
- * @endcode
+@endcode
  *
  * Only one message is being said at any given time. A new message will
  * interrupt the previous spoken message. For example, you can create a simple
  * talking clock with the following:
- * @code
+@code
 import Speech
 say "It is currently " & text hours & " hours and " & text minutes & " minutes"
- * @endcode
+@endcode
  *
  * You can change the voice with the @ref voice command. The list of
  * voices is system-dependent. A comma-separated list of available
  * voices on the current system is returned by the @ref voices
  * command. The following example lets you listen to each of the
  * available voices on the system:
- * @code
+@code
 import Speech
 speech_page with voices
 speech_page V:text ->
@@ -36,7 +36,7 @@ speech_page V:text ->
             vertical_align 0.5
             text "Currently playing the voice named " & V
             say "Your are currently listening to the voice named " & V
- * @endcode
+@endcode
  *
  * @endtaomoduledescription{Speech}
  *
@@ -52,19 +52,19 @@ speech_page V:text ->
  * supplémentaires pour parler dans d'autres langues que l'anglais.
  *
  * Pour dire "Hello World", utilisez le code suivant:
- * @code
+@code
 import Speech
 say "Hello World"
- * @endcode
+@endcode
  *
  * Un seul message est prononcé à un moment donné. Un nouveau message
  * interrompra automatiquement le message parlé précédent. Par
  * exemple, vous pouvez créer une horloge parlante simple avec le code
  * suivant:
- * @code
+@code
 import Speech
 say "It is currently " & text hours & " hours and " & text minutes & " minutes"
- * @endcode
+@endcode
  *
  * Vous pouvez changer la voix utilisée pour parler en utilisant
  * la commande @ref voice. La liste des voix disponibles dépend
@@ -72,7 +72,7 @@ say "It is currently " & text hours & " hours and " & text minutes & " minutes"
  * liste XL des voix disponibles sur le système en cours. L'exemple
  * suivant vous permettra d'écouter chacune des voix disponibles sur
  * le système:
- * @code
+@code
 import Speech
 speech_page with voices
 speech_page V:text ->
@@ -83,7 +83,7 @@ speech_page V:text ->
             vertical_align 0.5
             text "Currently playing the voice named " & V
             say "Your are currently listening to the voice named " & V
- * @endcode
+@endcode
  *
  * @endtaomoduledescription{Speech}
  *
