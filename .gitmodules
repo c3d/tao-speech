@@ -1,0 +1,3 @@
+[submodule "qt-speech"]
+	path = qt-speech
+	url = ssh://io.taodyne.com/~/buddda/modules/speech/qt-speech
