@@ -4,7 +4,7 @@
 // 
 //   File Description:
 // 
-//     Speech interface for Tao Presentations
+//     Speech interface for Tao3D
 // 
 // 
 // 
